@@ -1,0 +1,40 @@
+.about {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .about h2 {
+      font-size: 2rem;
+    }
+  
+    .about p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .about h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about p {
+      font-size: 1rem;
+    }
+  }
+  
