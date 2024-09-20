@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2024 Third Floor Studio. All Rights Reserved.</p>
+      <p>&copy; 2024 DEEPIXEL. All Rights Reserved.</p>
     </footer>
   );
 };
