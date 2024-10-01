@@ -8,12 +8,14 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import SidebarMenu from './pages/SidebarMenu';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
+        <SidebarMenu />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />

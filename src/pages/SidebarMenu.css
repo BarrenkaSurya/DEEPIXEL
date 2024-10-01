@@ -1,0 +1,96 @@
+/* Menu icon (fixed position) */
+.menu-icon {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 100;
+    
+  }
+  
+  .menu-line {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(148, 145, 145);
+    margin-bottom: 5px;
+  }
+  
+  /* Navigation Menu (appears when menu is open) */
+  .navigation-menu {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .navigation-menu.open {
+    transform: translateX(0);
+  }
+  
+  .navigation-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navigation-menu ul li {
+    margin-bottom: 20px;
+  }
+  
+  .navigation-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .navigation-menu ul li a:hover {
+    color: #E91E63;
+  }
+  
+  /* Social Media Icons fixed at the bottom-left */
+  .social-media-icons {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .social-media-icons a {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .social-media-icons a:hover {
+    color: #E91E63;
+  }
+  
+  /* Responsive Design for mobile/tablet */
+  @media (max-width: 768px) {
+    .navigation-menu {
+      width: 200px;
+    }
+  
+    .social-media-icons {
+      flex-direction: row;
+      bottom: 10px;
+      left: 10px;
+    }
+  
+    .social-media-icons a {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+  }
+  
